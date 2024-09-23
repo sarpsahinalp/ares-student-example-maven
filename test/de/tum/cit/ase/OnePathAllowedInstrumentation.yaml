@@ -1,5 +1,5 @@
 regardingTheSupervisedCode:
-  theFollowingProgrammingLanguageConfigurationIsUsed: JAVA_USING_GRADLE_ARCHUNIT_AND_INSTRUMENTATION
+  theFollowingProgrammingLanguageConfigurationIsUsed: JAVA_USING_MAVEN_ARCHUNIT_AND_INSTRUMENTATION
   theProgrammingLanguageUsesTheFollowingPackage: "de.tum.cit.ase"
   theMainClassInsideThisPackageIs: "Main"
   theFollowingClassesAreTestClasses:
