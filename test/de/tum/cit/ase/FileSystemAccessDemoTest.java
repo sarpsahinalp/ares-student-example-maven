@@ -20,7 +20,6 @@ import static org.junit.jupiter.api.Assertions.fail;
 class FileSystemAccessDemoTest {
 
     //<editor-fold desc="ReadTests">
-
     @Test
     @Policy(value = "test/de/tum/cit/ase/EverythingForbiddenPolicy.yaml")
     void accessFileSystemViaFilesReadArchUnit() {
