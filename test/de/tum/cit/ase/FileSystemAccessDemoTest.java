@@ -30,7 +30,7 @@ class FileSystemAccessDemoTest {
     }
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedAspectJ.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedAspectJ.yaml")
     void accessFileSystemViaFilesReadAspectJ() {
         try {
             Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
@@ -43,7 +43,7 @@ class FileSystemAccessDemoTest {
     }
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedInstrumentation.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedInstrumentation.yaml")
     void accessFileSystemViaFilesReadInstrumentation() {
         try {
             Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
@@ -59,7 +59,7 @@ class FileSystemAccessDemoTest {
     //<editor-fold desc="WriteTests">
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/EverythingForbiddenPolicy.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/EverythingForbiddenPolicy.yaml")
     void accessFileSystemViaFilesWriteArchUnit() {
         Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
         Object fileSystemAccessDemo = newInstance(clazz);
@@ -67,7 +67,7 @@ class FileSystemAccessDemoTest {
     }
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedAspectJ.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedAspectJ.yaml")
     void accessFileSystemViaFilesWriteAspectJ() {
         try {
             Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
@@ -80,7 +80,7 @@ class FileSystemAccessDemoTest {
     }
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedInstrumentation.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedInstrumentation.yaml")
     void accessFileSystemViaFilesWriteInstrumentation() {
         try {
             Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
@@ -96,7 +96,7 @@ class FileSystemAccessDemoTest {
     //<editor-fold desc="ExecuteTests">
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/EverythingForbiddenPolicy.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/EverythingForbiddenPolicy.yaml")
     void accessFileSystemViaFilesExecuteArchUnit() {
         Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
         Object fileSystemAccessDemo = newInstance(clazz);
@@ -104,7 +104,7 @@ class FileSystemAccessDemoTest {
     }
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedAspectJ.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedAspectJ.yaml")
     void accessFileSystemViaFilesExecuteAspectJ() {
         try {
             Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
@@ -117,7 +117,7 @@ class FileSystemAccessDemoTest {
     }
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedInstrumentation.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedInstrumentation.yaml")
     void accessFileSystemViaFilesExecuteInstrumentation() {
         try {
             Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
@@ -133,7 +133,7 @@ class FileSystemAccessDemoTest {
     //<editor-fold desc="DeleteTests">
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/EverythingForbiddenPolicy.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/EverythingForbiddenPolicy.yaml")
     void accessFileSystemViaFilesDeleteArchUnit() {
         Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
         Object fileSystemAccessDemo = newInstance(clazz);
@@ -141,7 +141,7 @@ class FileSystemAccessDemoTest {
     }
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedAspectJ.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedAspectJ.yaml")
     void accessFileSystemViaFilesDeleteAspectJ() {
         try {
             Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
@@ -154,7 +154,7 @@ class FileSystemAccessDemoTest {
     }
 
     @Test
-    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedInstrumentation.yaml", withinPath = "classes/java/main")
+    @Policy(value = "test/de/tum/cit/ase/OnePathAllowedInstrumentation.yaml")
     void accessFileSystemViaFilesDeleteInstrumentation() {
         try {
             Class<?> clazz = getClazz("de.tum.cit.ase.FileSystemAccessDemo");
