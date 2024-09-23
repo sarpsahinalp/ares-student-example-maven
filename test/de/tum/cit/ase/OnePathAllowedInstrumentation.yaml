@@ -1,0 +1,25 @@
+regardingTheSupervisedCode:
+  theFollowingProgrammingLanguageConfigurationIsUsed: JAVA_USING_GRADLE_ARCHUNIT_AND_INSTRUMENTATION
+  theProgrammingLanguageUsesTheFollowingPackage: "de.tum.cit.ase"
+  theMainClassInsideThisPackageIs: "Main"
+  theFollowingClassesAreTestClasses:
+    - "de.tum.cit.ase.ares.api"
+    - "de.tum.cit.ase.FileSystemAccessDemoTest"
+  theFollowingResourceAccessesArePermitted:
+    regardingFileSystemInteractions:
+      - readAllFiles: true
+        overwriteAllFiles: false
+        executeAllFiles: false
+        deleteAllFiles: false
+        onThisPathAndAllPathsBelow: "pom.xml"
+    regardingNetworkConnections: []
+    regardingCommandExecutions: []
+    regardingThreadCreations: []
+    regardingPackageImports:
+      - importTheFollowingPackage: "java.io"
+      - importTheFollowingPackage: "java.util"
+      - importTheFollowingPackage: "java.nio"
+      - importTheFollowingPackage: "java.net"
+      - importTheFollowingPackage: "java.awt"
+      - importTheFollowingPackage: "javax.swing"
+      - importTheFollowingPackage: "javax.sound"
