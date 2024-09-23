@@ -42,7 +42,7 @@
                 <version>3.3.0</version>
                 <configuration>
                     <forkCount>1</forkCount>
-                    <argLine>-javaagent:${project.build.directory}/ares-2.0.0-SNAPSHOT-agent.jar -Xbootclasspath/a:${user.home}/.m2/repository/org/aspectj/aspectjrt/${aspectj.version}/aspectjrt-${aspectj.version}.jar</argLine>
+                    <argLine>-javaagent:${project.build.directory}/${project.artifactId}-${project.version}-agent.jar -Xbootclasspath/a:${user.home}/.m2/repository/org/aspectj/aspectjrt/1.9.22/aspectjrt-1.9.22.jar</argLine>
                 </configuration>
             </plugin>
             <!-- Shade Plugin to package the agent JAR -->
